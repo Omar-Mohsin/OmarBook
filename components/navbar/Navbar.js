@@ -8,7 +8,6 @@ function Navbar() {
     return (
         <div className='navContainer'>
             <h1 className='logo'>OmarBook</h1>
-            {console.log('navbar')}
             <nav className='navbar'>
                 <Link href={'/Feed'} style={{ textDecoration: 'none', color: 'black' }}>
                     <HomeIcon>Feed</HomeIcon>

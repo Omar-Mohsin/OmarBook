@@ -1,8 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
 import { Providers } from '@/redux/provider/provider'
-import SignInPage from './SignIn/page'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
