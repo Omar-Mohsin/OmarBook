@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .innerContainer {
+    background-color: #fff;
+    display: flex;
+  }
+  
+  .brand {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand h3 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1877f2; /* Facebook blue color */
+  }
+  
+  .brand h5 {
+    font-size: 25px;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  .form {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 350px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #1877f2; 
+  }
+  
+  
+  
+ .formElement {
+
+    margin-top: 20px;
+ }
+
+ .loginButton {
+
+    width: 350px;
+    height : 45px;
+    margin-top: 20px;
+    color : white; 
+    background-color: #1877f2;
+    border-radius:5px;
+    font-size: 20px;
+    border-style: none;
+ }
+  
+
+ .ForgetPasswordLink{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color : blue ;
+     text-decoration : none ;
+     
+     
+ }
+ .ForgetPasswordLink:hover {
+    text-decoration : underline ;
+
+ }
+
+ hr{
+    width: 250px;
+    height: 1px;
+    margin-bottom: 20px;
+ }
+
+ .createAccountButton{
+
+    width: 200px;
+    height : 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color : white; 
+    background-color: limegreen;
+    border-radius:5px;
+    font-size: 20px;
+    border-style: none;
+ }
