@@ -17,8 +17,8 @@ reducers :{
     }},
     removeUser: {
         reducer (state , action){
-            state.user = action.payload;
-            state.id = action.payload;
+            state.user = null;
+            state.id = null;
 
         }},
 

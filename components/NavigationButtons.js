@@ -1,5 +1,4 @@
 import React from 'react'
-import './PostForm.css'
 import Link from 'next/link'
 function NavigationButtons() {
     return (

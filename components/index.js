@@ -1,7 +1,13 @@
 import Navbar from "./navbar/Navbar"
-import PostForm from "./PostForm"
+import Post from "./Posts/Post"
+import NotAutho from "./NotAutho"
+import NavigationButtons from "./NavigationButtons"
 export  { 
     Navbar , 
-    PostForm,
+    Post,
+    NotAutho, 
+    NavigationButtons,
+
+
     
 }

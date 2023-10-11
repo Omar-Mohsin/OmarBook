@@ -1,10 +1,23 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import PersonIcon from '@mui/icons-material/Person';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { useDispatch } from 'react-redux';
+import { removeUser } from '@/redux/auth/authSlice';
 import './Navbar.css'
+
 function Navbar() {
+
+    const dispatch = useDispatch();
+
+
+
+    const signOutHandler = ()=>{
+        dispatch(removeUser());
+    }
     return (
         <div className='navContainer'>
             <h1 className='logo'>OmarBook</h1>
@@ -20,6 +33,11 @@ function Navbar() {
                 <Link href={'/Profile'} style={{ textDecoration: 'none', color: 'black' }}>
 
                     <PersonIcon>Profile</PersonIcon>
+                </Link>
+
+                   <Link href={'/SignIn'} style={{ textDecoration: 'none', color: 'black' }} onClick={signOutHandler}>
+
+                    <ExitToAppIcon></ExitToAppIcon>
                 </Link>
 
             </nav>

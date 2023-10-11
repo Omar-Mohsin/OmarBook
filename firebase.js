@@ -34,13 +34,12 @@ export const createUserDocumentFromAuth = async (userAuth) => {
     const userDocRef = doc(db, 'users', userAuth.uid);
     const userSnapshot = await getDoc(userDocRef);
     if (!userSnapshot.exists()) {
-        const cart = [];
         const { displayName, email } = userAuth;
         const createdAt = new Date();
 
         try {
 
-            await setDoc(userDocRef, { displayName, email, createdAt, cart })
+            await setDoc(userDocRef, { displayName, email, createdAt})
 
         } catch (error) {
             console.log("error while creating a user ", error.message)
